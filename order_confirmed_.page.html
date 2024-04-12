@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Confirmed - BrewNet</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <!-- Add your CSS file link here -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="order_confirmed_page.css" />
+  </head>
+  <body>
+    <div class="container" id="main-body-container">
+      <header>
+        <div class="top-headbar">
+          <div class="lg-sl-sec" id="lg-sl-sec">
+            <div class="logo" id="logo"></div>
+            <!-- <img src="https://images.unsplash.com/photo-1572756317709-fe9c15ced298?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c3F1YXJlJTIwc2hhcGV8ZW58MHx8MHx8fDA%3D"  alt="website logo" class="logo" id="logo"></img> -->
+            <span class="slogan" id="slogan">Experience the Perfect Blend of Flavor and Ambiance.</span>
+          </div>
+          <h1 class="csms" id="csms">Shop Management System</h1>
+        </div>
+        <hr align="center" color="#D4AF37" size="1" />
+        <nav class="navbar">
+          <a href="index.html">Home</a>
+          <a href="about_page.html">About Us</a>
+          <a href="contact_page.html">Contacts</a>
+          <a href="help_page.html">Help</a>
+          <a href="login_staff_page.html">Login as Staff</a>
+          <a href="login_customer_page.html">Login as Customer</a>
+        </nav>
+      </header>
+      <main id="main-content">
+        <section class="middle-main-section" id="middle-section">
+          <div class="thanks-message-section" id="thanks-message">
+            <p>Thank you for placing your order with us!</p>
+          </div>
+          <div class="order-details-section" id="order-details">
+            <h3 class="sec-headings">Order details</h3>
+            <p><strong>Time left for delivery:</strong> 30 minutes</p>
+            <p>
+              <strong>Ordered items:</strong> 1x Latte, 2x Cappuccino, 1x
+              Cold Coffee With Ice Cream
+            </p>
+            <!-- Add more order details as suitable -->
+          </div>
+          <div class="rate-order-section" id="rate-order">
+            <h3 class="sec-headings">rate this order</h3>
+            <p>How would you rate this order?</p>
+            <input
+              type="number"
+              min="1"
+              max="5"
+              class="star_rate_input"
+              id="star_rate_input"
+              placeholder="How many stars you will give?(from 1.0 to 5.0)"
+            />
+            <textarea
+              placeholder="Rate this order in detail / Give us Feedback"
+            ></textarea>
+            <button class="send_rating_btn" id="send_rating_btn">Send</button>
+          </div>
+          <div class="payment-section" id="payment">
+            <h3 class="sec-headings">Your bill and payment options</h3>
+            <h4 class="order-headings" >bill</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th colspan="2"> Your Bill</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Item Total:</td>
+                    <td>₹600</td>
+                  </tr>
+                  <tr>
+                    <td>GST (5%):</td>
+                    <td>+₹30</td>
+                  </tr>
+                  <tr>
+                    <td>Handling Charges:</td>
+                    <td>+₹12</td>
+                  </tr>
+                  <tr>
+                    <td>Order Total:</td>
+                    <td>₹642</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 class="order-headings" >Payment options</h3>
+                <label for="pay-with-select">Pay With?</label>
+                <select name="Pay-with" id="pay-with-select">
+                  <option value="UPI">UPI</option>
+                  <option value="C-D-card">Credit/Debit card</option>
+                  <option value="V-gc">Voucher/gift card</option>
+                  <option value="PW">Paytm Wallet</option>
+                  <option value="Cash" selected>Cash</option>
+                </select>
+                <button class="s-n-o-btn">PAY NOW</button>
+              
+          </div>
+          <div class="order-again-section" id="order-again">
+            <a href="order-confirming-page.html" class="s-n-o-btn">Repeat Order</a>
+            <a href="index.html#order" class="s-n-o-btn">New Order</a>
+          </div>
+          <div class="thanks-visit-section" id="thanks-visit">
+            <p>Thanks for visiting! We hope to serve you again soon.</p>
+          </div>
+        </section>
+      </main>
+      <footer id="main-footer">
+        <p>
+          This is a simple HTML & CSS project made by
+          <span>Yashvi Jaiswal</span> & <span>Pragyan Singhal</span>
+        </p>
+        <p>© 2024 Coffee Management System</p>
+      </footer>
+    </div>
+  </body>
+</html>

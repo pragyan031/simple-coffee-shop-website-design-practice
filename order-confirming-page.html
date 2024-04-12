@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Confirming - BrewNet</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <!-- Add your CSS file link here -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="order-confirming-page.css" />
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <div class="preloader">
+          <svg
+            class="cart"
+            role="img"
+            aria-label="Shopping cart line animation"
+            viewBox="0 0 128 128"
+            width="128px"
+            height="128px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="8"
+            >
+              <g class="cart__track" stroke="hsla(0,10%,10%,0.1)">
+                <polyline
+                  points="4,4 21,4 26,22 124,22 112,64 35,64 39,80 106,80"
+                />
+                <circle cx="43" cy="111" r="13" />
+                <circle cx="102" cy="111" r="13" />
+              </g>
+              <g class="cart__lines" stroke="currentColor">
+                <polyline
+                  class="cart__top"
+                  points="4,4 21,4 26,22 124,22 112,64 35,64 39,80 106,80"
+                  stroke-dasharray="338 338"
+                  stroke-dashoffset="-338"
+                />
+                <g class="cart__wheel1" transform="rotate(-90,43,111)">
+                  <circle
+                    class="cart__wheel-stroke"
+                    cx="43"
+                    cy="111"
+                    r="13"
+                    stroke-dasharray="81.68 81.68"
+                    stroke-dashoffset="81.68"
+                  />
+                </g>
+                <g class="cart__wheel2" transform="rotate(90,102,111)">
+                  <circle
+                    class="cart__wheel-stroke"
+                    cx="102"
+                    cy="111"
+                    r="13"
+                    stroke-dasharray="81.68 81.68"
+                    stroke-dashoffset="81.68"
+                  />
+                </g>
+              </g>
+            </g>
+          </svg>
+          <p>
+            Please wait, your order request has been sent to our staff. Kindly
+            allow them a moment to accept it. Thank you for your patience!😄😊
+          </p>
+        </div>
+        <div class="completed">
+          <h2 class="order-confirmed-title">
+            Congratulations! Your Order has been placed.
+          </h2>
+          <p class="order-confirmed-text">
+            Your order has been successfully processed and is now being
+            prepared. You can view your order by clicking the link below:
+          </p>
+          <a href="order_confirmed_.page.html" class="order-link btn-link"
+            >View Your Order</a
+          >
+          <p>OR</p>
+          <a href="index.html" class="home-link btn-link">Go to Home</a>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

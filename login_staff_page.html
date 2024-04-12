@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Staff Login - BrewNet</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <!-- Add your CSS file link here -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="login_staff_page.css" />
+  </head>
+  <body>
+    <div class="container" id="main-body-container">
+      <header>
+        <div class="top-headbar">
+          <div class="lg-sl-sec" id="lg-sl-sec">
+            <div class="logo" id="logo"></div>
+            <!-- <img src="https://images.unsplash.com/photo-1572756317709-fe9c15ced298?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c3F1YXJlJTIwc2hhcGV8ZW58MHx8MHx8fDA%3D"  alt="website logo" class="logo" id="logo"></img> -->
+            <span class="slogan" id="slogan"
+              >Experience the Perfect Blend of Flavor and Ambiance.</span
+            >
+          </div>
+          <h1 class="csms" id="csms">Shop Management System</h1>
+        </div>
+        <hr align="center" color="#D4AF37" size="1" />
+        <nav class="navbar">
+          <a href="index.html">Home</a>
+          <a href="about_page.html">About Us</a>
+          <a href="contact_page.html">Contacts</a>
+          <a href="help_page.html">Help</a>
+          <a href="login_staff_page.html">Login as Staff</a>
+          <a href="login_customer_page.html">Login as Customer</a>
+        </nav>
+      </header>
+      <main id="main-content">
+        <section class="form-container" id="form-container">
+          <div class="form-logo" id="form-logo"></div>
+          <input
+            type="text"
+            id="user-input"
+            class="input-field"
+            placeholder="Email or username or phone number"
+          />
+          <input
+            type="password"
+            id="password-input"
+            class="input-field"
+            placeholder="Password"
+          />
+          <button id="login-button">LOGIN</button>
+          <hr id="form-op-Seperator" size="10" color="#8B4513" />
+          <div class="additional-options">
+            <label for="remember-me"
+              ><input type="checkbox" id="remember-me" /> Remember me</label
+            >
+            <a href="signup_staff_page.html" id="signup-link"
+              >Don't have account? Signup</a
+            >
+            <p id="or">Or</p>
+            <a href="#" id="google-login" class="gl-fb-login"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="12"
+                fill="#F5DEB3"
+                class="bi bi-google"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"
+                />
+              </svg>
+              &nbsp;Login with Google</a
+            >
+            <a href="#" id="facebook-login" class="gl-fb-login"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="15"
+                fill="#F5DEB3"
+                class="bi bi-facebook"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                />
+              </svg>
+              &nbsp;Login with Facebook</a
+            >
+          </div>
+        </section>
+      </main>
+      <footer id="main-footer">
+        <p>
+          This is a simple HTML & CSS project made by
+          <span>Yashvi Jaiswal</span> & <span>Pragyan Singhal</span>
+        </p>
+        <p>© 2024 Coffee Management System</p>
+      </footer>
+    </div>
+  </body>
+</html>

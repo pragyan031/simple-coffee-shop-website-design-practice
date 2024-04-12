@@ -1,0 +1,228 @@
+:root {
+  --hue: 223;
+  --bg: hsl(var(--hue), 10%, 90%);
+  --fg: hsl(var(--hue), 10%, 10%);
+  --primary: gold;
+  --trans-dur: 0.3s;
+  font-size: calc(16px + (20 - 16) * (100vw - 320px) / (1280 - 320));
+}
+.preloader {
+  text-align: center;
+  max-width: 20em;
+  animation: cartgone 29.5s forwards;
+  animation-iteration-count: 1;
+  width: 100%;
+  transform: scale(0.7);
+}
+.preloader__text {
+  position: relative;
+  height: 1.5em;
+}
+.preloader__msg {
+  animation: msg 0.3s 13.7s linear forwards;
+  position: absolute;
+  width: 100%;
+}
+.preloader__msg--last {
+  animation-direction: reverse;
+  animation-delay: 14s;
+  visibility: hidden;
+}
+.cart {
+  display: block;
+  margin: 0 auto 1.5em auto;
+  filter: drop-shadow(0px 0px 15px gold);
+  width: 8em;
+  height: 8em;
+}
+.cart__lines,
+.cart__top,
+.cart__wheel1,
+.cart__wheel2,
+.cart__wheel-stroke {
+  animation: cartLines 2s ease-in-out infinite;
+}
+.cart__lines {
+  stroke: var(--primary);
+}
+.cart__top {
+  animation-name: cartTop;
+}
+.cart__wheel1 {
+  animation-name: cartWheel1;
+  transform: rotate(-0.25turn);
+  transform-origin: 43px 111px;
+}
+.cart__wheel2 {
+  animation-name: cartWheel2;
+  transform: rotate(0.25turn);
+  transform-origin: 102px 111px;
+}
+.cart__wheel-stroke {
+  animation-name: cartWheelStroke;
+}
+.cart__track {
+  stroke: hsla(var(--hue), 10%, 10%, 0.1);
+  transition: stroke var(--trans-dur);
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: hsl(var(--hue), 10%, 10%);
+    --fg: hsl(var(--hue), 10%, 90%);
+  }
+  .cart__track {
+    stroke: hsla(var(--hue), 10%, 90%, 0.1);
+  }
+}
+
+/* Animations */
+@keyframes msg {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  99.9% {
+    opacity: 0;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes cartLines {
+  from,
+  to {
+    opacity: 0;
+  }
+  8%,
+  92% {
+    opacity: 1;
+  }
+}
+@keyframes cartTop {
+  from {
+    stroke-dashoffset: -338;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 338;
+  }
+}
+@keyframes cartWheel1 {
+  from {
+    transform: rotate(-0.25turn);
+  }
+  to {
+    transform: rotate(2.75turn);
+  }
+}
+@keyframes cartWheel2 {
+  from {
+    transform: rotate(0.25turn);
+  }
+  to {
+    transform: rotate(3.25turn);
+  }
+}
+@keyframes cartWheelStroke {
+  from,
+  to {
+    stroke-dashoffset: 81.68;
+  }
+  50% {
+    stroke-dashoffset: 40.84;
+  }
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+p {
+  color: #e6be8a;
+}
+.completed {
+  flex-direction: column;
+  align-items: center;
+  animation: orderplaced 30s linear;
+  animation-iteration-count: 1;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.completed h2 {
+  font-size: 1.2rem;
+  color: gold;
+}
+.completed p {
+  color: khaki;
+  font-size: 0.9rem;
+}
+
+.btn-link {
+  font-size: 0.7rem;
+  background-color: #b76e79;
+  color: palegoldenrod;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-link:hover {
+  filter: brightness(70%);
+}
+@keyframes cartgone {
+  /* 0% {
+    visibility: visible;
+  }
+  2.9% {
+    visibility: visible;
+  }
+
+  3% {
+    visibility: hidden;
+    /* transform: none; */
+  /* transform: scale(0.7);
+    display: none;
+  }
+  3.1% {
+    transform: scale(0);
+  }
+  100% {
+    visibility: hidden;
+  } */
+  to {
+    display: none;
+  }
+}
+@keyframes orderplaced {
+  0% {
+    display: none;
+    visibility: hidden;
+  }
+
+  98% {
+    display: none;
+    visibility: hidden;
+  }
+  99% {
+    display: inline-block;
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}

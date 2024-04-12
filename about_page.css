@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+#main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  width: 100%;
+  /* background: green; */
+  /* border: 2px solid cyan; */
+}
+.sec-headings {
+  overflow: hidden;
+  text-align: center;
+  font-size: 1.3rem;
+  color: rgba(255, 217, 0, 0.65);
+  font-weight: 900;
+  /* font-style: italic; */
+  width: 100%;
+  text-transform: capitalize;
+  font-family: "Dancing Script", cursive;
+}
+
+.sec-headings::before,
+.sec-headings::after {
+  background-color: rgba(255, 217, 0, 0.65);
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 35%;
+}
+
+.sec-headings::before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.sec-headings::after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+.middle-main-section {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  width: 100%;
+  padding: 30px;
+  gap: 50px;
+}
+.sections {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.sections p {
+  color: #e6be8a;
+}
+iframe {
+  opacity: 0.1;
+  transition: all 0.5s ease-in-out;
+}
+iframe:hover {
+  opacity: 1;
+}

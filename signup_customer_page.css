@@ -1,0 +1,142 @@
+#main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  width: 100%;
+  /* background: green; */
+  /* border: 2px solid cyan; */
+}
+.form-container {
+  display: grid;
+  /* justify-content: center; */
+  align-items: center;
+  align-content: center;
+  padding: 20px;
+  width: 50%;
+  background-image: url("login-sign-bg.jpg");
+  background-size: cover;
+  object-fit: cover;
+  box-shadow: 0px 0px 10px 0px black, 0px 0px 10px 0px black;
+  border-radius: 30px;
+  gap: 15px;
+  justify-items: center;
+}
+
+.input-field {
+  border: none;
+  color: gold !important;
+  background-image: url("web\ full\ bg\ op\ 2.jpg");
+  background-size: cover;
+  font-size: 0.9rem;
+  box-shadow: 0px 0px 5px 0px black, 0px 0px 5px 0px black;
+  text-align: center;
+  padding: 15px 30px;
+  width: 50%;
+  font-style: italic;
+  border-radius: 20px;
+}
+.input-field::placeholder {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  font-style: normal;
+  color: gold;
+  font-weight: 700;
+}
+#signup-button {
+  font-size: 1rem;
+  color: orange;
+  /* text-shadow: 0px 0px 3px goldenrod, 0px 0px 3px goldenrod; */
+  padding: 25px 25px;
+  text-align: center;
+  margin-top: 15px;
+  letter-spacing: 2px;
+  box-shadow: 0px 0px 5px 0px black, 0px 0px 5px 0px black;
+  font-weight: 900;
+  border: none;
+  /* transform: scale(1.1); */
+  background-image: url("https://images.unsplash.com/photo-1589830802010-c2c25d784842?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGJyb3dufGVufDB8fDB8fHww");
+  background-size: cover;
+  border-radius: 10% 10% 45% 45%;
+}
+#form-logo {
+  background-image: url("signup\ as\ customer\ logo\ final.png");
+  background-size: cover;
+  /* border: 2px solid red; */
+  /* box-shadow: 0px 0px 5px 0px black, 0px 0px 5px 0px black; */
+  height: 10rem;
+  background-position: 45%;
+  /* overflow: visible; */
+  border-radius: 50%;
+  width: 10rem;
+}
+#form-op-Seperator {
+  border: none;
+  background-size: cover;
+  width: 90%;
+  background-image: url("web\ full\ bg\ op\ 2.jpg");
+  box-shadow: 0px 0px 2px 3px black, 0px 0px 2px 3px black;
+}
+.additional-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+label[for="remember-me"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-size: cover; */
+  gap: 5px;
+  box-shadow: 0px 0px 2px 1px black, 0px 0px 2px 1px black;
+  background-color: rgb(90, 18, 18);
+  border-radius: 20px;
+  color: khaki;
+  /* background-image: url("https://ideogram.ai/api/images/direct/xfVZSu4CQ3CG2gCiNcgLSg.jpg"); */
+  padding: 10px;
+}
+
+/* input[type="checkbox"] {
+      background-color: red;
+    } */
+input[type="checkbox"]:checked {
+  accent-color: gold;
+}
+#login-link {
+  box-shadow: 0px 2px 1px black, 0px 0px 2px 1px black;
+  background-color: #704214;
+  border-radius: 20px;
+  color: khaki;
+  font-weight: bold;
+  text-decoration: none;
+  /* background-image: url("https://ideogram.ai/api/images/direct/xfVZSu4CQ3CG2gCiNcgLSg.jpg"); */
+  padding: 10px;
+}
+#or {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 900;
+  text-shadow: 0px 0px 1px black, 0px 0px 1px black;
+  font-size: 1.5rem;
+  color: #704214;
+}
+
+.gl-fb-login {
+  padding: 10px 20px;
+  background-image: url("https://ideogram.ai/api/images/direct/QqScN_xRQLOlBbeHWiRwwQ.jpg");
+  border-radius: 10px;
+  background-size: cover;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #f5deb3;
+  box-shadow: 0px 0px 5px 2px black, 0px 0px 5px 2px black;
+  text-decoration: none;
+}
+.gl-fb-login:hover {
+  transform: scale(1.02);
+  font-weight: 900;
+  /* box-shadow: none; */
+}
