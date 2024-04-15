@@ -217,6 +217,7 @@ footer span::selection {
 .top-main-section {
   display: flex;
   flex-direction: column;
+  align-items:start;
   gap: 10px;
   padding-inline: 30px;
 }
